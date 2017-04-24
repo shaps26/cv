@@ -9,62 +9,77 @@
     tools:context="com.example.shaps.cv_shpas.MainActivity"
     android:weightSum="1">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:id="@+id/headerAcceuil">
+
+
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100sp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/shapsp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:text="Shanmuganathan" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:text="shapeche" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:text="22 ans" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/colorPrimary"
+                android:text="shanshapeche@gmail.com" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
 
 <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:layout_marginTop="25dp">
-
-    <ImageView
-        android:layout_height="75dp"
-        android:layout_width="75dp"
-        android:layout_marginLeft="15dp"
-        android:src="@drawable/shaps"
-       />
-
-    <TextView
-        android:id="@+id/Titre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="70dp"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:textColor="@color/colorPrimary"
-        android:text="Developpeur Android" />
-</LinearLayout>
-
-
-<LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:textSize="18dp"
-        android:textColor="@color/colorPrimary"
-        android:text="Shanmuganathan" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="18dp"
-        android:textColor="@color/colorPrimary"
-        android:text="shapeche" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="18dp"
-        android:textColor="@color/colorPrimary"
-        android:text="shanshapeche@gmail.com" />
-</LinearLayout>
-
+    android:layout_height="350dp"
+    android:orientation="vertical"
+    android:id="@+id/AcueilBoutton">
 
     <Button
         android:id="@+id/buttonCompetence"
@@ -88,29 +103,33 @@
         android:textStyle="bold"
         android:text="Experience" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="25dp"
-        >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
 
         <ImageButton
-
             android:id="@+id/buttonLnk"
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:background="@color/colorAccent"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
             android:scaleType="fitXY"
+            android:layout_gravity="center"
             android:src="@drawable/lnk"
             />
-
-
+    <ImageButton
+        android:id="@+id/buttonGIt"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@color/colorAccent"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:src="@drawable/lnk"
+        />
+</LinearLayout>
 
     </LinearLayout>
 
-
-
 </LinearLayout>
+
+

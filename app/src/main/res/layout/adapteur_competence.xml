@@ -1,18 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#ffff">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/headerCompetence"
+        android:background="#ffff"
+        android:layout_marginBottom="25dp">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:text="Competences"
+            android:textSize="25dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/buttonMusicCover"
+            android:layout_width="160dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/competence" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/competenceView">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:paddingBottom="15dp">
     <TextView
         android:id="@+id/adapterNom"
-        android:layout_width="140dp"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:text="Nom :"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:text="Langages :"
         />
 
     <TextView
-        android:id="@+id/adapterType"
+        android:id="@+id/valueNomCompetence"
         android:layout_width="137dp"
         android:layout_height="wrap_content"
-        android:text="Type : " />
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:text="HTML/CSS, JS, PHP, SQL, JAVA" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:id="@+id/Framework"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:text="Framework :"
+            />
+
+        <TextView
+            android:id="@+id/valueFrame"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:text="Angular JS" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/Systeme"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:text="système d'exploitation :"
+            />
+
+        <TextView
+            android:id="@+id/valueSysteme"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:text=" windows, MAC OS, Linux" />
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
 </LinearLayout>
+

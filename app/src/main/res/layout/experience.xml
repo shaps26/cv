@@ -10,7 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:paddingBottom="20dp"
         android:orientation="horizontal">
 
 
@@ -35,6 +35,148 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textSNCF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:text="SNCF Paris-Montparnasse 2016-2017" />
+
+        </LinearLayout>
 
 
-</LinearLayout>
+
+            <TextView
+                android:id="@+id/DescriptionSNCF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:text="Maintenance et developpement de plusieurs sites intranet" />
+
+
+
+            <TextView
+                android:id="@+id/langageSNCF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:text="HTML/CSS , JS, PHP/SQL" />
+
+        </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="25dp">
+
+
+            <TextView
+                android:id="@+id/textOrange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:text="ORANGE(Châtillon) 2016" />
+
+
+        <TextView
+            android:id="@+id/DescriptionOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:text="Mise a disposition des rapport de transaction Orange Money" />
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+            <TextView
+                android:id="@+id/textCCM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:text="CCM (Paris) 2014 - 2015" />
+
+
+
+            <TextView
+                android:id="@+id/descriptionCCM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:text="Développement de site internet
+ www.medecin-generaliste-paris.fr" />
+
+
+            <TextView
+                android:id="@+id/langageCCM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:text="HTML/CSS , JS, PHP/SQL" />
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+            <TextView
+                android:id="@+id/textWI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:text="World Image (Paris) 2014 - 2016 " />
+
+            <TextView
+                android:id="@+id/descriptionIM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:textColor="#000000"
+                android:text="Maintenance, installation, récupération et mise a niveau des ordinateurs." />
+
+        </LinearLayout>
+
+
+    </LinearLayout>

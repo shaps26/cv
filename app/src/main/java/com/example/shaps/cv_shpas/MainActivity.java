@@ -1,17 +1,27 @@
 package com.example.shaps.cv_shpas;
 
 import android.content.Intent;
+import android.graphics.Rect;
+import android.media.Image;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AbsListView;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
+
 
     private Button buttonCompetence;
     private Button buttonFormation;
     private Button buttonExperience;
-    private Button buttonLnk;
+    private ImageButton buttonLnk;
+    private ImageButton buttonGit;
 
 
     @Override
@@ -43,23 +53,55 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        buttonLnk = (ImageButton) findViewById(R.id.buttonLnk);
+        buttonLnk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToLnk();
+            }
+        });
+
+        buttonGit = (ImageButton) findViewById(R.id.buttonGIt);
+        buttonGit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goTOGit();
+            }
+        });
+
     }
 
-    public void goToCompetence(){
+    public void goToCompetence() {
         Intent CompetenceIntent = new Intent(getApplicationContext(), CompetenceActivity.class);
         startActivity(CompetenceIntent);
 
     }
 
-    public void goToFormation(){
+    public void goToFormation() {
         Intent FormationIntent = new Intent(getApplicationContext(), FormationActivity.class);
         startActivity(FormationIntent);
 
     }
 
-    public void goToExperience(){
+    public void goToExperience() {
         Intent ExperienceIntent = new Intent(getApplicationContext(), ExperienceActivity.class);
         startActivity(ExperienceIntent);
+
+    }
+
+    public void goToLnk() {
+        Uri uri = Uri.parse("https://www.linkedin.com/in/shapeche-shan-684295a7/"); // missing 'http://' will cause crashed
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
+
+
+    }
+
+    public void goTOGit() {
+        Uri uri = Uri.parse("https://www.linkedin.com/in/shapeche-shan-684295a7/"); // missing 'http://' will cause crashed
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
+
 
     }
 }
