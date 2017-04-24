@@ -106,7 +106,8 @@
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:gravity="center">
+    android:gravity="center"
+    android:layout_marginTop="15dp">
 
         <ImageButton
             android:id="@+id/buttonLnk"
@@ -117,14 +118,14 @@
             android:layout_gravity="center"
             android:src="@drawable/lnk"
             />
-    <ImageButton
-        android:id="@+id/buttonGIt"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:background="@color/colorAccent"
-        android:scaleType="fitXY"
-        android:layout_gravity="center"
-        android:src="@drawable/lnk"
+        <ImageButton
+            android:id="@+id/buttonGIt"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@color/colorAccent"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:src="@drawable/git"
         />
 </LinearLayout>
 

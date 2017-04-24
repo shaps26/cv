@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goTOGit() {
-        Uri uri = Uri.parse("https://www.linkedin.com/in/shapeche-shan-684295a7/"); // missing 'http://' will cause crashed
+        Uri uri = Uri.parse("https://github.com/shaps26"); // missing 'http://' will cause crashed
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
 
